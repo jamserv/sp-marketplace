@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+declare var $: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -40,7 +42,14 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {    
+    window.scrollTo(0, 0)
+    /*    
+    $('myModal').modal('show')
+    setTimeout(function() {
+      $('myModal').modal('hide')
+    }, 500)    
+    */
   }
 
 }

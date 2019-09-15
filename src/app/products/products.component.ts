@@ -10,6 +10,7 @@ export class ProductsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo(0, 320)
   }
 
   items = [
@@ -17,25 +18,25 @@ export class ProductsComponent implements OnInit {
       name: 'BELL PEPPER',
       price_old: '$120.00',
       price_new: '$80.00',
-      image: './assets/images/product-1.jpg'
+      image: './assets/images/product-4.jpg'
     },
     {
       name: 'BELL PEPPER',
       price_old: '$45.00',
       price_new: '$20.00',
-      image: './assets/images/product-2.jpg'
+      image: './assets/images/product-12.jpg'
     },
     {
       name: 'BELL PEPPER',
       price_old: '$300.00',
       price_new: '$220.00',
-      image: './assets/images/product-3.jpg'
+      image: './assets/images/product-9.jpg'
     },
     {
       name: 'BELL PEPPER',
       price_old: '$60.00',
       price_new: '$25.00',
-      image: './assets/images/product-4.jpg'
+      image: './assets/images/product-3.jpg'
     },
     {
       name: 'BELL PEPPER',
