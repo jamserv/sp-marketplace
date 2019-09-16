@@ -10,7 +10,7 @@ export class ProductsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.scrollTo(0, 320)
+    window.scrollTo(0, 280)
   }
 
   items = [

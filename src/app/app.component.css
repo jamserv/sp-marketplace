@@ -42,3 +42,17 @@
     top: 0;
     bottom: 0;
   }
+
+  .fa-cart-plus {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #82ae46;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 1px;    
+    text-align: center;    
+    line-height: 15px;   
+    left: 50%;    
+    color: #fff;
+}
