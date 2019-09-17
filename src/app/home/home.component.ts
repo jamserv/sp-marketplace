@@ -35,21 +35,24 @@ export class HomeComponent implements OnInit {
       'image': './assets/images/bg_2.jpg'
     },
     {
-      'title': '300% Fresh Organic Foods',
+      'title': '</form>300% Fresh Organic Foods',
       'image': './assets/images/bg_3.jpg'
     },
-  ]
-
-  constructor() { }
+  ]  
+  constructor() { }  
 
   ngOnInit() {    
-    window.scrollTo(0, 0)
-    /*    
-    $('myModal').modal('show')
-    setTimeout(function() {
-      $('myModal').modal('hide')
-    }, 500)    
-    */
+    window.scrollTo(0, 0)        
+    let ss = sessionStorage.getItem("showSubscriber");
+    console.log(ss);
+    if(ss === 'null' || ss === null) {
+      $('.popup').addClass('open');
+    }
+  }
+
+  closePopup() {
+    $('.popup').removeClass('open');    
+    sessionStorage.setItem("showSubscriber", "false");
   }
 
 }

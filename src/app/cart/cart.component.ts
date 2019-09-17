@@ -10,7 +10,7 @@ export class CartComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.scrollTo(0, 300)
+    window.scrollTo(0, 280)
   }
 
 }
